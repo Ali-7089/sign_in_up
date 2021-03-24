@@ -1,0 +1,525 @@
+@font-face{
+    font-family:"whitney" ;
+    src: url('./desktop./fonts/whitneyttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+    width: 100;
+}
+
+body{
+    position: relative;
+}
+
+#back{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    min-height: 60px;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    display: flex;
+    outline: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 4px 5px  rgb(224, 223, 223);
+}
+
+nav img{
+        width: 90px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+}
+
+nav .links{
+    min-height: inherit;
+    width: 450px;
+    margin-right: 600px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-family: 'whitney';
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+
+.icon-head>#bookmark{
+    width: 13px;
+    margin-top: 2px;
+    color: #707070;
+    margin-right: 5px;
+}
+
+#bag{
+    color: #707070;
+}
+
+.icons{
+    display: flex;
+    min-height: 60px !important;
+    width: 150px;
+    margin-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-box{
+    position: absolute;
+    height: 35px;
+    border-radius: 5px;
+    background-color:#ebebeb;
+    display: flex;
+    right: 230px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-box:hover > .search-text{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-btn{
+    float: left;
+    width: 18px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn i{
+    outline: none;
+    text-decoration: none;
+    color: #858585;
+}
+
+.search-text{
+    border: none;
+    outline: none;
+    background: none;
+    float: right;
+    font-family: 'whitney';
+    padding: 0%;
+    color: rgb(131, 131, 131);
+    transition: 0.4s;
+    line-height: 40px;
+    font-size: 12px;
+    letter-spacing: .5px;
+    width: 0;
+}
+
+.icon-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: inherit;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.icon-head i{
+    opacity: .7;
+}
+
+#profile{
+    width: 15px;
+}
+
+#pro{
+    margin-left: 7px;
+}
+
+.icon-head h5{
+    font-family: 'whitney semibold';
+    text-transform: capitalize;
+    opacity: .7;
+    letter-spacing: .3px;
+    font-weight: initial;
+    font-size:12px;
+}
+ 
+.big{
+  width: 100%;
+  height: 92.4%;
+  display: flex;
+}
+.imagecontainer{
+    height: 100%;
+    width: 55%;
+}
+
+.details{
+    height: 100%;
+    width: 45%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rc{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#rc1{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+.imagecontainer img{
+    height: 100%;
+    width: 100%;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    height: 93%;
+    position: relative;
+}
+ #container img{
+  height: 100%;
+  width: 100%;
+ }
+
+.pallete{
+    width: 390px;
+    height: 440px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    filter: blur(1px);
+    position: absolute;
+    z-index: -1;
+}
+.palletoverlay{
+    width: 390px;
+    height: 440px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0);
+    z-index: 9;
+}
+
+.welcome{
+    position: absolute;
+    z-index: 999;
+    top: 95px;
+}
+
+
+.palletoverlay h2{
+    font-family: 'whitney';
+    opacity: .6;
+    font-weight:600;
+    margin-top: 20px;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+  
+  .palletoverlay h5{
+    font-family: 'whitney';
+    font-weight: 600;
+    opacity: .4;
+    letter-spacing: .5px;
+    margin-top: 5px
+  }
+  
+  .otp{
+      width: 200px;
+      height: 50px;
+      display: flex;
+    
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      margin-top: 15px;
+  }
+  
+  .otp input{
+      width: 25px;
+      /* padding: 0 10px; */
+      height: 40px;
+      outline: none;
+      border-color: #707070;
+      border-radius: 3px;
+      font-size: 20px;
+      text-align: center;
+  }
+  
+  .palletoverlay #resend{
+      text-transform: uppercase;
+      outline: none;
+      text-decoration: none;
+      font-family: 'whitney';
+      letter-spacing: .5px;
+      margin-top: 12px;
+      color: #0066FF;
+  }
+  
+  .palletoverlay p{
+      margin-top: 20px;
+      font-size: 17px;
+      font-family: 'whitney';
+      letter-spacing: .2px;
+      opacity: .8;
+  }
+  
+  .palletoverlay p a{
+      text-decoration: none;
+      color: #0066FF;
+  }
+  
+  #continue{
+      margin-top: 20px;
+      padding: 8px 75px;
+      outline: none;
+      /* margin-left: 15px; */
+      font-family: 'whitney';
+      border: none;
+      background-color: #ffbf60;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+  
+  #continue:hover{
+      cursor: pointer;
+      background-color: #be8b3d;
+  }
+
+.palletoverlay .picture{
+    width: 250px;
+    margin-top: 20px;
+}
+#details #rc{
+    display: none;
+}
+#find{
+    display: none;    
+}
+#return{
+    display: none;
+}
+
+/* for responsive */
+
+.back1{
+    height:100vh;
+    width: 100%;
+    position: absolute;
+    display: none;
+
+}
+
+.back1 nav{
+    display: flex;
+    width: 100%;
+    min-height:60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 4px 5px  rgb(224, 223, 223);
+}
+ .logo1>i{
+    width: 10px;
+}
+.back1>nav img{
+        width: 90px;     
+}
+
+nav .icons1{
+    display: flex;
+    align-items: center;
+}
+.logo1{
+    display: flex;
+    width: 120px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 30px;
+}
+#find1{
+    opacity: 1;
+}
+#bag1{
+    opacity:1;
+}
+.icons1{
+    width: 90px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: inherit;
+}
+#book{
+    color: rgb(0, 0, 0);
+    width: 12px;
+    margin-top: 5px;
+    margin-left: -0.5px;
+}
+.container1{
+    width: 100%;
+    min-height: 92.4%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome1{
+    position: absolute;
+    left: 28%;
+    top: 12%;
+}
+#rc2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#rc3{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.pallete1{
+    width: 390px;
+    min-height: 440px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    filter: blur(1px);
+    position: relative;
+}
+.palletoverlay1{
+    width: 390px;
+    min-height: 440px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0);
+    z-index: 9;
+}
+
+
+
+.palletoverlay1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.palletoverlay1 h2{
+    font-family: 'whitney';
+    opacity: .6;
+    font-weight:600;
+    margin-top: 20px;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+  
+  .palletoverlay1 h5{
+    font-family: 'whitney';
+    font-weight: 600;
+    opacity: .4;
+    letter-spacing: .5px;
+    margin-top: 5px
+  }
+  
+  .otp{
+      width: 200px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      margin-top: 20px;
+  }
+  
+  .otp input{
+      width: 28px;
+      height: 40px;
+      border-color: #70707073;
+      border-radius: 3px;
+      font-size: 20px;
+      text-align: center;
+  }
+  
+  .palletoverlay1 #resend{
+      text-transform: uppercase;
+      outline: none;
+      text-decoration: none;
+      font-family: 'whitney';
+      letter-spacing: .5px;
+      margin-top: 12px;
+      color: #0066FF;
+  }
+  
+  .palletoverlay1 p{
+      margin-top: 20px;
+      font-size: 17px;
+      font-family: 'whitney';
+      letter-spacing: .2px;
+      opacity: .5;
+  }
+  
+  .palletoverlay1 p a{
+      text-decoration: none;
+      color: #0066FF;
+  }
+
+  .palletoverlay1 .picture{
+      width: 250px;
+      margin-top: 15px;
+  }
+
+
+@media(max-width:500px){
+    .back1{
+        display: flex;
+        flex-direction: column
+    }
+    #back{
+        display: none;
+    }
+}
+
+@media(max-width:375px){
+ .welcome1{
+     left: 80px;
+ }
+       }
+@media(max-width:330px){
+    .welcome1{
+        left: 60px;
+    }
+}
